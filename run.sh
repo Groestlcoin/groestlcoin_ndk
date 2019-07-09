@@ -13,9 +13,7 @@ build_repo() {
     done
 }
 
-build_repo https://github.com/bitcoin/bitcoin.git 2472733a24a9364e4c6233ccd04166a26a68cc65 bitcoin bitcoin --disable-man
-build_repo https://github.com/bitcoinknots/bitcoin.git 5e1c2d13f506e58513064ecbd914e00a944ee6a0 bitcoin bitcoin --disable-man
-build_repo https://github.com/elementsproject/elements.git 551483eae50ff2ee48ed17d6b22bb1a26284b635 elements liquid --enable-liquid
+build_repo https://github.com/groestlcoin/groestlcoin.git 6256eb73901b51acd4bf89f2082ab0b90cf5d50b groestlcoin groestlcoin --disable-man
 
 wait
 
@@ -35,6 +33,4 @@ printpackages() {
 }
 
 set +x
-printpackages _bitcoin
-printpackages _bitcoinknots
-printpackages _liquid
+printpackages _groestlcoin
